@@ -1,0 +1,356 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart18604acf6f0a' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart18604acf6f0a",
+"width":    800,
+"height":    400,
+"scope": "usa",
+"fills": {
+ "(52,395]": "#F1EEF6",
+"(395,961]": "#D7B5D8",
+"(961,1.88e+03]": "#DF65B0",
+"(1.88e+03,3.09e+03]": "#DD1C77",
+"(3.09e+03,1.47e+04]": "#980043" 
+},
+"legend": true,
+"labels": true,
+"geographyConfig": {
+ "popupTemplate": function(geo, data) {
+                            return '<div class=\"hoverinfo\"><strong>' +
+                            data.BorrowerState + '<br>' + data.n +
+                            '</strong></div>';} 
+},
+"data": {
+ "": {
+ "BorrowerState": [ "" ],
+"n": [ 5515 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"AK": {
+ "BorrowerState": [ "AK" ],
+"n": [ 200 ],
+"fillKey": [ "(52,395]" ] 
+},
+"AL": {
+ "BorrowerState": [ "AL" ],
+"n": [ 1679 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"AR": {
+ "BorrowerState": [ "AR" ],
+"n": [ 855 ],
+"fillKey": [ "(395,961]" ] 
+},
+"AZ": {
+ "BorrowerState": [ "AZ" ],
+"n": [ 1901 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"CA": {
+ "BorrowerState": [ "CA" ],
+"n": [ 14717 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"CO": {
+ "BorrowerState": [ "CO" ],
+"n": [ 2210 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"CT": {
+ "BorrowerState": [ "CT" ],
+"n": [ 1627 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"DC": {
+ "BorrowerState": [ "DC" ],
+"n": [ 382 ],
+"fillKey": [ "(52,395]" ] 
+},
+"DE": {
+ "BorrowerState": [ "DE" ],
+"n": [ 300 ],
+"fillKey": [ "(52,395]" ] 
+},
+"FL": {
+ "BorrowerState": [ "FL" ],
+"n": [ 6720 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"GA": {
+ "BorrowerState": [ "GA" ],
+"n": [ 5008 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"HI": {
+ "BorrowerState": [ "HI" ],
+"n": [ 409 ],
+"fillKey": [ "(395,961]" ] 
+},
+"IA": {
+ "BorrowerState": [ "IA" ],
+"n": [ 186 ],
+"fillKey": [ "(52,395]" ] 
+},
+"ID": {
+ "BorrowerState": [ "ID" ],
+"n": [ 599 ],
+"fillKey": [ "(395,961]" ] 
+},
+"IL": {
+ "BorrowerState": [ "IL" ],
+"n": [ 5921 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"IN": {
+ "BorrowerState": [ "IN" ],
+"n": [ 2078 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"KS": {
+ "BorrowerState": [ "KS" ],
+"n": [ 1062 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"KY": {
+ "BorrowerState": [ "KY" ],
+"n": [ 983 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"LA": {
+ "BorrowerState": [ "LA" ],
+"n": [ 954 ],
+"fillKey": [ "(395,961]" ] 
+},
+"MA": {
+ "BorrowerState": [ "MA" ],
+"n": [ 2242 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"MD": {
+ "BorrowerState": [ "MD" ],
+"n": [ 2821 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"ME": {
+ "BorrowerState": [ "ME" ],
+"n": [ 101 ],
+"fillKey": [ "(52,395]" ] 
+},
+"MI": {
+ "BorrowerState": [ "MI" ],
+"n": [ 3593 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"MN": {
+ "BorrowerState": [ "MN" ],
+"n": [ 2318 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"MO": {
+ "BorrowerState": [ "MO" ],
+"n": [ 2615 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"MS": {
+ "BorrowerState": [ "MS" ],
+"n": [ 787 ],
+"fillKey": [ "(395,961]" ] 
+},
+"MT": {
+ "BorrowerState": [ "MT" ],
+"n": [ 330 ],
+"fillKey": [ "(52,395]" ] 
+},
+"NC": {
+ "BorrowerState": [ "NC" ],
+"n": [ 3084 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"ND": {
+ "BorrowerState": [ "ND" ],
+"n": [ 52 ],
+"fillKey": [ null ] 
+},
+"NE": {
+ "BorrowerState": [ "NE" ],
+"n": [ 674 ],
+"fillKey": [ "(395,961]" ] 
+},
+"NH": {
+ "BorrowerState": [ "NH" ],
+"n": [ 551 ],
+"fillKey": [ "(395,961]" ] 
+},
+"NJ": {
+ "BorrowerState": [ "NJ" ],
+"n": [ 3097 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"NM": {
+ "BorrowerState": [ "NM" ],
+"n": [ 472 ],
+"fillKey": [ "(395,961]" ] 
+},
+"NV": {
+ "BorrowerState": [ "NV" ],
+"n": [ 1090 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"NY": {
+ "BorrowerState": [ "NY" ],
+"n": [ 6729 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"OH": {
+ "BorrowerState": [ "OH" ],
+"n": [ 4197 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"OK": {
+ "BorrowerState": [ "OK" ],
+"n": [ 971 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"OR": {
+ "BorrowerState": [ "OR" ],
+"n": [ 1817 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"PA": {
+ "BorrowerState": [ "PA" ],
+"n": [ 2972 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"RI": {
+ "BorrowerState": [ "RI" ],
+"n": [ 435 ],
+"fillKey": [ "(395,961]" ] 
+},
+"SC": {
+ "BorrowerState": [ "SC" ],
+"n": [ 1122 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"SD": {
+ "BorrowerState": [ "SD" ],
+"n": [ 189 ],
+"fillKey": [ "(52,395]" ] 
+},
+"TN": {
+ "BorrowerState": [ "TN" ],
+"n": [ 1737 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"TX": {
+ "BorrowerState": [ "TX" ],
+"n": [ 6842 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"UT": {
+ "BorrowerState": [ "UT" ],
+"n": [ 877 ],
+"fillKey": [ "(395,961]" ] 
+},
+"VA": {
+ "BorrowerState": [ "VA" ],
+"n": [ 3278 ],
+"fillKey": [ "(3.09e+03,1.47e+04]" ] 
+},
+"VT": {
+ "BorrowerState": [ "VT" ],
+"n": [ 207 ],
+"fillKey": [ "(52,395]" ] 
+},
+"WA": {
+ "BorrowerState": [ "WA" ],
+"n": [ 3048 ],
+"fillKey": [ "(1.88e+03,3.09e+03]" ] 
+},
+"WI": {
+ "BorrowerState": [ "WI" ],
+"n": [ 1842 ],
+"fillKey": [ "(961,1.88e+03]" ] 
+},
+"WV": {
+ "BorrowerState": [ "WV" ],
+"n": [ 391 ],
+"fillKey": [ "(52,395]" ] 
+},
+"WY": {
+ "BorrowerState": [ "WY" ],
+"n": [ 150 ],
+"fillKey": [ "(52,395]" ] 
+} 
+},
+"id": "chart18604acf6f0a" 
+}
+  chartParams.element = document.getElementById('chart18604acf6f0a')
+  
+  
+  var mapchart18604acf6f0a = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart18604acf6f0a.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart18604acf6f0a.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart18604acf6f0a.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

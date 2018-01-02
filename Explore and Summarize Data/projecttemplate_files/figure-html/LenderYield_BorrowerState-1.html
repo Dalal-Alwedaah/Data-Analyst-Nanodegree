@@ -1,0 +1,357 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart18602f5d289a' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart18602f5d289a",
+"width":    800,
+"height":    400,
+"scope": "usa",
+"fills": {
+ "(0.153,0.177]": "#EDF8E9",
+"(0.177,0.182]": "#BAE4B3",
+"(0.182,0.185]": "#74C476",
+"(0.185,0.19]": "#31A354",
+"(0.19,0.202]": "#006D2C" 
+},
+"legend": true,
+"labels": true,
+"geographyConfig": {
+ "popupTemplate": function(geo, data) {
+                        return '<div class=\"hoverinfo\"><strong>' +
+                        data.BorrowerState +
+                        '<br>' + data.mean_yield +
+                        '</strong></div>';} 
+},
+"data": {
+ "": {
+ "BorrowerState": [ "" ],
+"mean_yield": [ 0.17084 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"AK": {
+ "BorrowerState": [ "AK" ],
+"mean_yield": [ 0.1749 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"AL": {
+ "BorrowerState": [ "AL" ],
+"mean_yield": [ 0.20158 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"AR": {
+ "BorrowerState": [ "AR" ],
+"mean_yield": [ 0.19635 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"AZ": {
+ "BorrowerState": [ "AZ" ],
+"mean_yield": [ 0.1812 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"CA": {
+ "BorrowerState": [ "CA" ],
+"mean_yield": [ 0.18207 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"CO": {
+ "BorrowerState": [ "CO" ],
+"mean_yield": [ 0.17594 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"CT": {
+ "BorrowerState": [ "CT" ],
+"mean_yield": [ 0.18051 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"DC": {
+ "BorrowerState": [ "DC" ],
+"mean_yield": [ 0.16443 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"DE": {
+ "BorrowerState": [ "DE" ],
+"mean_yield": [ 0.17027 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"FL": {
+ "BorrowerState": [ "FL" ],
+"mean_yield": [ 0.18188 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"GA": {
+ "BorrowerState": [ "GA" ],
+"mean_yield": [ 0.18536 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"HI": {
+ "BorrowerState": [ "HI" ],
+"mean_yield": [ 0.17454 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"IA": {
+ "BorrowerState": [ "IA" ],
+"mean_yield": [ 0.15312 ],
+"fillKey": [ null ] 
+},
+"ID": {
+ "BorrowerState": [ "ID" ],
+"mean_yield": [ 0.19495 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"IL": {
+ "BorrowerState": [ "IL" ],
+"mean_yield": [ 0.1822 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"IN": {
+ "BorrowerState": [ "IN" ],
+"mean_yield": [ 0.1832 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"KS": {
+ "BorrowerState": [ "KS" ],
+"mean_yield": [ 0.18307 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"KY": {
+ "BorrowerState": [ "KY" ],
+"mean_yield": [ 0.19153 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"LA": {
+ "BorrowerState": [ "LA" ],
+"mean_yield": [ 0.18944 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"MA": {
+ "BorrowerState": [ "MA" ],
+"mean_yield": [ 0.17404 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"MD": {
+ "BorrowerState": [ "MD" ],
+"mean_yield": [ 0.18413 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"ME": {
+ "BorrowerState": [ "ME" ],
+"mean_yield": [ 0.15505 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"MI": {
+ "BorrowerState": [ "MI" ],
+"mean_yield": [ 0.1881 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"MN": {
+ "BorrowerState": [ "MN" ],
+"mean_yield": [ 0.18247 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"MO": {
+ "BorrowerState": [ "MO" ],
+"mean_yield": [ 0.19426 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"MS": {
+ "BorrowerState": [ "MS" ],
+"mean_yield": [ 0.19454 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"MT": {
+ "BorrowerState": [ "MT" ],
+"mean_yield": [ 0.18764 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"NC": {
+ "BorrowerState": [ "NC" ],
+"mean_yield": [ 0.18519 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"ND": {
+ "BorrowerState": [ "ND" ],
+"mean_yield": [ 0.20044 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"NE": {
+ "BorrowerState": [ "NE" ],
+"mean_yield": [ 0.18042 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"NH": {
+ "BorrowerState": [ "NH" ],
+"mean_yield": [ 0.18547 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"NJ": {
+ "BorrowerState": [ "NJ" ],
+"mean_yield": [ 0.18058 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"NM": {
+ "BorrowerState": [ "NM" ],
+"mean_yield": [ 0.18729 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"NV": {
+ "BorrowerState": [ "NV" ],
+"mean_yield": [ 0.19196 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"NY": {
+ "BorrowerState": [ "NY" ],
+"mean_yield": [ 0.17905 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"OH": {
+ "BorrowerState": [ "OH" ],
+"mean_yield": [ 0.18624 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"OK": {
+ "BorrowerState": [ "OK" ],
+"mean_yield": [ 0.17853 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"OR": {
+ "BorrowerState": [ "OR" ],
+"mean_yield": [ 0.1862 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"PA": {
+ "BorrowerState": [ "PA" ],
+"mean_yield": [ 0.18957 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"RI": {
+ "BorrowerState": [ "RI" ],
+"mean_yield": [ 0.18394 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"SC": {
+ "BorrowerState": [ "SC" ],
+"mean_yield": [ 0.18236 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"SD": {
+ "BorrowerState": [ "SD" ],
+"mean_yield": [ 0.19484 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"TN": {
+ "BorrowerState": [ "TN" ],
+"mean_yield": [ 0.19003 ],
+"fillKey": [ "(0.19,0.202]" ] 
+},
+"TX": {
+ "BorrowerState": [ "TX" ],
+"mean_yield": [ 0.18213 ],
+"fillKey": [ "(0.182,0.185]" ] 
+},
+"UT": {
+ "BorrowerState": [ "UT" ],
+"mean_yield": [ 0.18561 ],
+"fillKey": [ "(0.185,0.19]" ] 
+},
+"VA": {
+ "BorrowerState": [ "VA" ],
+"mean_yield": [ 0.17773 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"VT": {
+ "BorrowerState": [ "VT" ],
+"mean_yield": [ 0.17721 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"WA": {
+ "BorrowerState": [ "WA" ],
+"mean_yield": [ 0.18006 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"WI": {
+ "BorrowerState": [ "WI" ],
+"mean_yield": [ 0.17657 ],
+"fillKey": [ "(0.153,0.177]" ] 
+},
+"WV": {
+ "BorrowerState": [ "WV" ],
+"mean_yield": [ 0.18035 ],
+"fillKey": [ "(0.177,0.182]" ] 
+},
+"WY": {
+ "BorrowerState": [ "WY" ],
+"mean_yield": [ 0.18183 ],
+"fillKey": [ "(0.177,0.182]" ] 
+} 
+},
+"id": "chart18602f5d289a" 
+}
+  chartParams.element = document.getElementById('chart18602f5d289a')
+  
+  
+  var mapchart18602f5d289a = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart18602f5d289a.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart18602f5d289a.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart18602f5d289a.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>
