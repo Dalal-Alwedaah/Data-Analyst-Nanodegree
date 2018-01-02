@@ -1,0 +1,16 @@
+base
+ggplot2
+ggthemes
+plyr
+dplyr
+knitr
+rMaps
+lattice
+MASS
+memisc
+tidyr
+stringr
+lazyeval
+functional
+Rcpp
+GGally
